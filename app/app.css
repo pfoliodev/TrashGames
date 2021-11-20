@@ -1,0 +1,20 @@
+.container{  
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    overflow:hidden; 
+}
+
+#game{
+    display: flex;
+    width: 49%;
+    background-color: black;
+}
+
+.rule{
+    display: flex;
+    width: 49%;
+}
