@@ -8,7 +8,14 @@
     overflow:hidden; 
 }
 
+#spaceship{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 #game{
+    position: relative;
     display: flex;
     width: 49%;
     background-color: black;

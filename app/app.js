@@ -2,33 +2,63 @@ let spaceship = document.querySelector('#spaceship')
 let game = document.querySelector('#game')
 let moveBy = 10
 
-console.log(game.offsetWidth);
-console.log(game.offsetHeight);
+// Handle Spaceship Modes
+window.addEventListener('keydown', (e) => {
+    switch(e.key) {
+        case 'a' :
+            spaceship.src = "../assets/SpaceShipBlue.png"
+            spaceship.className = "spaceShipBlue"
+            break
+        case 'z' : 
+            spaceship.src = "../assets/SpaceShipGrey.png"
+            spaceship.className = "spaceShipGrey"
+            break
+        case 'e' : 
+            spaceship.src = "../assets/SpaceShipGreen.png"
+            spaceship.className = "spaceShipGreen"
+            break
+        case 'r' :
+            spaceship.src = "../assets/SpaceShipRed.png"
+            spaceship.className = "spaceShipRed"
+            break
+        case 't' :
+            spaceship.src = "../assets/SpaceShipYellow.png"
+            spaceship.className = "spaceShipYellow"
+            break
+    }
+})
 
+
+// First Spaceship position in screen  
 window.addEventListener('load', () => {
     spaceship.style.position = 'absolute'
     spaceship.style.left = 0
     spaceship.style.right = 0
-    spaceship.style.top = 0
-    spaceship.style.bottom = 0
+    spaceship.style.top = game.offsetHeight / 2 
 })
 
+// Handle Spaceship Moves
 window.addEventListener('keydown', (e) => {
     switch(e.key) {
-        case 'ArrowLeft' : 
-        spaceship.style.left = parseInt(spaceship.style.left) - moveBy + 'px'
-        break
+        case 'ArrowLeft' :
+        if(spaceship.offsetLeft > 0){
+            spaceship.style.left = parseInt(spaceship.style.left) - moveBy + 'px'
+            break
+        }
         case 'ArrowRight' : 
-        spaceship.style.left = parseInt(spaceship.style.left) + moveBy + 'px'
-        break
+        if(spaceship.offsetLeft + spaceship.width < game.offsetWidth){
+            spaceship.style.left = parseInt(spaceship.style.left) + moveBy + 'px'
+            break
+        } 
         case 'ArrowUp' : 
-        spaceship.style.top = parseInt(spaceship.style.top) - moveBy + 'px'
-        console.log(spaceship.offsetTop);
-        break
-        case 'ArrowDown' : 
-        spaceship.style.top = parseInt(spaceship.style.top) + moveBy + 'px'
-        console.log(spaceship.offsetTop);
-        break
+        if(spaceship.offsetTop > 0){
+            spaceship.style.top = parseInt(spaceship.style.top) - moveBy + 'px'
+            break
+        }
+        case 'ArrowDown' :
+        if(spaceship.offsetTop + spaceship.height < game.offsetHeight){
+            spaceship.style.top = parseInt(spaceship.style.top) + moveBy + 'px'
+            break
+        } 
     }
-    console.log(e.key)
 })
