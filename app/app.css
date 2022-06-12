@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .container{  
     display: flex;
     position: relative;
@@ -12,16 +15,18 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    z-index: 50;
 }
 
 #game{
     position: relative;
     display: flex;
-    width: 49%;
-    background-color: black;
+    width: 100%;
+    background-color: grey;
 }
 
-.rule{
-    display: flex;
-    width: 49%;
+.projectile{
+    position: absolute;
+    margin-right: 5px;
+    z-index: 100;
 }
