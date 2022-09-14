@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.infoTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#lifeSpaceShip{
+  margin-left: 20px;
+}
+
+#seconds, #tens {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#popUpEndGame{
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  background-image: url("img/background.gif");
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px inset;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#popUpSelectShip{
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/background.gif");
+    background-size: cover;
+    position: absolute;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    top: 50%;
+    left: 50%;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px inset;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .iconSpaceShipTop{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+  }
+
+  .titleSelectSpaceShip{
+    display: flex;
+    color: #fff;
+    text-shadow: .1em .1em 0 rgb(13, 14, 14);
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+.btnEndGme{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+#replayGame, #chooseShip{
+  color: #fff;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.validateSpaceShip{
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  background-color: #487AC6;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius:3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.containerSpaceShip{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+.cardItemShip{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+  width: 250px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.spaceShipPreview{
+  text-align: center;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: 80px;
+  padding: 5px;
+  background-color: #3B3B3B;
+}
+
+.spaceShipPreview img{
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.spaceShipDescription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+.titleDescription{
+  color: #3B3B3B;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 10px;
+}
+
+#replayGame{
+  background-color: #3B3B3B;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#chooseShip{
+  background-color: #1AC15D;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.iconTop{
+  margin-top: -50px;
+}
+
+.stars{
+  margin-top: 10px;
+}
+
+.score, .time{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.score img, .time img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#textEndGame{
+  color: #fff;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#scoreEndGame, #timeEndGame{
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+#timeEndGame, #scoreEndGame {
+  color: #fff;
+  width: auto;
+  min-width: 70px;
+  background-color: #3B3B3B;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.statsSpaceShip{
+  display: none;
+}
