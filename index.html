@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div style="position: relative;" id="parentDiv">
+      <div id="popUpEndGame" style="display:none">
+        <div class="iconTop"><img src="img/endgame.png" alt=""></div>
+        <div id="stars"></div>
+        <div id="textEndGame"></div>
+        <div class="dynamicLayout">
+          <div class="score"><span><img src="img/score.png" alt=""></span><span id="scoreEndGame"></span></div>
+          <div class="time"><span><img src="img/timer1.png" alt=""></span><span id="timeEndGame"></span></div>
+        </div>
+        <div class="btnEndGme">
+          <div id="replayGame">Rejouer</div>
+          <div id="chooseShip">Choisir un vaisseau</div>
+        </div>
+      </div>
+
+      <div id="popUpSelectShip" style="display: none;">
+        <div class="iconSpaceShipTop">
+          <img src="img/spaceship.png" alt="">
+        </div>
+        <div class="titleSelectSpaceShip">Choisis un vaisseau</div>
+        <div class="containerSpaceShip">
+          <div class="cardItemShip">
+            <div class="spaceShipPreview">
+              <img src="img/xerxesS.png" alt="">
+            </div>
+            <div class="spaceShipDescription">
+              <div class="titleDescription">Xerxes</div>
+              <div class="statsSpaceShip">
+                <div class="lifeSpaceship">2</div>
+                <div class="imgSpaceship">`./img/xerxes.png`</div>
+                <div class="nbProjectile">2</div>
+                <div class="velocityProjectile">-5</div>
+              </div>
+              <div class="validateSpaceShip">Choisir</div>
+            </div>
+          </div>
+          <div class="cardItemShip">
+            <div class="spaceShipPreview">
+              <img src="img/colossusS.png" alt="">
+            </div>
+            <div class="spaceShipDescription">
+              <div class="titleDescription">Colossus</div>
+              <div class="statsSpaceShip">
+                <div class="lifeSpaceship">5</div>
+                <div class="imgSpaceship"></div>
+                <div class="nbProjectile"></div>
+                <div class="velocityProjectile"></div>
+              </div>
+              <div class="validateSpaceShip">Choisir</div>
+            </div>
+          </div>
+          <div class="cardItemShip">
+            <div class="spaceShipPreview">
+              <img src="img/PathfinderS.png" alt="">
+            </div>
+            <div class="spaceShipDescription">
+              <div class="titleDescription">Pathfinder</div>
+              <div class="statsSpaceShip">
+                <div class="lifeSpaceship">3</div>
+                <div class="imgSpaceship"></div>
+                <div class="nbProjectile"></div>
+                <div class="velocityProjectile"></div>
+              </div>
+              <div class="validateSpaceShip">Choisir</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <p style="position: absolute; z-index: 10; color: white; left: 10px; top: 10px; margin: 0;">
+        <span class="infoTop"><span>Score : </span> <span id="scoreEl"> 0</span> <span id="lifeSpaceShip"></span></span>
+      </p>
+    <p style="position: absolute; z-index: 10; color: white; right: 10px; top: 10px; margin: 0;">
+    <span id="seconds">00</span>:<span id="tens">00</span>
+    </p>
+      <canvas></canvas>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./index.js"></script>
+</html>
+
+
+  
+
+
+  
